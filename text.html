@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Página Simples</title>
-</head>
-<body>
-  <h1>Bem-vindo à Página Simples</h1>
-  <p>Esta é uma página HTML básica de exemplo.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site de Teste de José Barbosa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary-color: #4CAF50;
+        --secondary-color: #2E7D32;
+        --background-color: #f5f5f5;
+        --card-bg-color: #ffffff;
+        --text-color: #333333;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        font-family: 'Roboto', Arial, sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+      
+      .container {
+        width: 100%;
+        max-width: 800px;
+        padding: 30px;
+        background-color: var(--card-bg-color);
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      
+      h1 {
+        color: var(--primary-color);
+        font-size: clamp(24px, 5vw, 36px);
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+      
+      p {
+        font-size: clamp(16px, 3vw, 18px);
+        margin-bottom: 25px;
+      }
+      
+      .btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+      .btn:hover {
+        background-color: var(--secondary-color);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+      }
+      
+      .icon {
+        font-size: 50px;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+      }
+      
+      /* Responsividade para dispositivos móveis */
+      @media (max-width: 600px) {
+        .container {
+          padding: 20px;
+        }
+        
+        .btn {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">✓</div>
+      <h1>Parabéns!</h1>
+      <p>Você acessou com sucesso o site de teste de José Barbosa.</p>
+    </div>
+  </body>
 </html>
